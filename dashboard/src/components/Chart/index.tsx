@@ -2,12 +2,11 @@ import * as S from "./styled";
 
 import {  Doughnut } from 'react-chartjs-2';
 
-import {  Tooltip, Chart,  Title, ArcElement } from 'chart.js';
+import {  Tooltip, Chart as NewChart,  Title, ArcElement } from 'chart.js';
 
-Chart.register(Title, Tooltip, ArcElement);
+NewChart.register(Title, Tooltip, ArcElement);
 
-
-function ComponentChart() {
+function Chart() {
 
   return (
     <S.Container>
@@ -22,8 +21,8 @@ function ComponentChart() {
               label: '# Teste',
               data: [20, 80],
               backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)'
+                '#f5d7d7',
+                '#220958'
               ],
             },
           ],
@@ -34,4 +33,4 @@ function ComponentChart() {
   );
 }
 
-export default ComponentChart;
+export default Chart;

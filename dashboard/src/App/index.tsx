@@ -1,13 +1,17 @@
 import GlobalStyles from "../GlobalStyled";
-import ComponentChart from "../components/ComponentChart";
+import { Header } from "../components/Header";
+import { SideBar } from "../components/SideBar";
+import * as S from "./styled";
 
 function App() {
-  
   return (
     <>
       <GlobalStyles />
-      <h1>Configuração inicial do dashboard</h1>
-      <ComponentChart  />
+
+      <S.ContainerApp>
+        <SideBar />
+        <Header />
+      </S.ContainerApp>
     </>
   );
 }
