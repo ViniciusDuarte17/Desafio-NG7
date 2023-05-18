@@ -24,7 +24,7 @@ export const Nav = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
-        &:hover{
+        &:focus, &:hover{
             cursor: pointer;
             background-color: #090E16;
         }
