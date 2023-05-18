@@ -3,7 +3,7 @@ import styled  from "styled-components"
 
 export const ContainerApp = styled.main`
     display: grid;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 80px 80%;
     margin: auto;
     margin-top: 3%;
     width: 90%;

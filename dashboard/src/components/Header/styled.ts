@@ -7,7 +7,7 @@ export const ContainerHeader = styled.header`
     width: 110%;
     height: 4.25em;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 
     h1{
         padding-left: 5%;
