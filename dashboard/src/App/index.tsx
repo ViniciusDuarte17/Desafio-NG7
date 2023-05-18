@@ -19,31 +19,11 @@ function App() {
           <Header />
 
           <S.SectionCard>
-            <Card
-              icon="icon"
-              text="texto vai por aqui"
-              price= '2,119'
-            />
-            <Card
-              icon="icon"
-              text="texto vai por aqui"
-              price= '2,119'
-            />
-            <Card
-              icon="icon"
-              text="texto vai por aqui"
-              price= '2,119'
-            />
-            <Card
-              icon="icon"
-              text="texto vai por aqui"
-              price= '2,119'
-            />
-            <Card
-              icon="icon"
-              text="texto vai por aqui"
-              price= '2,119'
-            />
+            <Card icon="icon" text="texto vai por aqui" price="2,119" />
+            <Card icon="icon" text="texto vai por aqui" price="2,119" />
+            <Card icon="icon" text="texto vai por aqui" price="2,119" />
+            <Card icon="icon" text="texto vai por aqui" price="2,119" />
+            <Card icon="icon" text="texto vai por aqui" price="2,119" />
           </S.SectionCard>
 
           <S.SectionAnalysis>
@@ -53,7 +33,7 @@ function App() {
             <S.SectionBarChart>
               <div>
                 {/* barra 1 */}
-                 <BarChart />
+                <BarChart />
               </div>
 
               <div>
@@ -62,6 +42,10 @@ function App() {
               </div>
             </S.SectionBarChart>
           </S.SectionAnalysis>
+
+          <S.SectionChartToNumber>
+            <h1>compenetes com porcentagem</h1>
+          </S.SectionChartToNumber>
         </div>
       </S.ContainerApp>
     </>

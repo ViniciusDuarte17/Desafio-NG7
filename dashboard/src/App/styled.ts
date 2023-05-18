@@ -30,3 +30,12 @@ export const SectionBarChart = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
+
+
+export const SectionChartToNumber = styled.section`
+  width: 94%;
+  height: 8em;
+  border: 1px solid yellow;
+  margin-left: 3%;
+  margin-top: 4%;
+`
