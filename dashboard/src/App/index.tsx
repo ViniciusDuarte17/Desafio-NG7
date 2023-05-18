@@ -1,6 +1,8 @@
 import GlobalStyles from "../GlobalStyled";
+import { BarChart } from "../components/BarChart";
 import { Card } from "../components/Card";
 import { Header } from "../components/Header";
+import { LineChart } from "../components/LineChart";
 import { SideBar } from "../components/SideBar";
 import * as S from "./styled";
 
@@ -44,9 +46,22 @@ function App() {
             />
           </S.SectionCard>
 
-          <section>
-            aqui vai outro conteudo
-          </section>
+          <S.SectionAnalysis>
+            <div>
+              <LineChart />
+            </div>
+            <S.SectionBarChart>
+              <div>
+                {/* barra 1 */}
+                 <BarChart />
+              </div>
+
+              <div>
+                {/* barra 2 */}
+                <BarChart />
+              </div>
+            </S.SectionBarChart>
+          </S.SectionAnalysis>
         </div>
       </S.ContainerApp>
     </>
