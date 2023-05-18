@@ -41,6 +41,6 @@ export const Select = styled.select`
   line-height: 16px;
   line-height: 100%;
   padding-left: 10%;
-  
+  cursor: pointer;
 `;
 
