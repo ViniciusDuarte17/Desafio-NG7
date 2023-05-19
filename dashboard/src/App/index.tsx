@@ -1,12 +1,15 @@
 import GlobalStyles from "../GlobalStyled";
 import { BarChart } from "../components/BarChart";
 import { Card } from "../components/Card";
+import Chart from "../components/Chart";
 import { Header } from "../components/Header";
 import { LineChart } from "../components/LineChart";
 import { SideBar } from "../components/SideBar";
 import * as S from "./styled";
 
 function App() {
+
+  
   return (
     <>
       <GlobalStyles />
@@ -32,13 +35,17 @@ function App() {
             </div>
             <S.SectionBarChart>
               <div>
-                {/* barra 1 */}
-                <BarChart />
+                {/* gráfico efeito pizza 1 */}
+                <BarChart title="Attendance">
+                  <Chart title="attendace" number={15} />
+                  <Chart title="attendace" number={20} />
+                  <Chart title="attendace" number={20} />
+                </BarChart>
               </div>
 
               <div>
                 {/* barra 2 */}
-                <BarChart />
+                {/* <BarChart /> */}
               </div>
             </S.SectionBarChart>
           </S.SectionAnalysis>
