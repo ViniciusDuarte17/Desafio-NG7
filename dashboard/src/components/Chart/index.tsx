@@ -34,7 +34,7 @@ function Chart({ number, title }: ChartProps) {
             {
               label: "# Teste",
               data: [number, sobraDivisao],
-              backgroundColor: ["#060101", "#15380d"],
+              backgroundColor: ["#cfcccc", "#26ff2dce"],
               borderAlign: "center",
               borderWidth: 0.2,
               hoverBorderWidth: 0.8,
