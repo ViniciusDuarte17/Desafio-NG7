@@ -37,5 +37,5 @@ export const SectionChartToNumber = styled.section`
   height: 8em;
   border: 1px solid yellow;
   margin-left: 3%;
-  margin-top: 4%;
+  /* margin-top: 4%; */
 `

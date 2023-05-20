@@ -1,42 +1,57 @@
-import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
+import React, { useEffect, useRef } from "react";
+import Chart from "chart.js/auto";
 
-interface BatteryChart {
+interface BatteryChartProps {
   data: number[];
   labels: string[];
 }
-import { Tooltip, Chart as NewChart, Title, ArcElement } from "chart.js";
 
-NewChart.register(Title, Tooltip, ArcElement);
-
-const BatteryChart: React.FC<BatteryChart> = ({ data, labels }) => {
+const BatteryChart: React.FC<BatteryChartProps> = ({ data, labels }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
+  const chartInstance = useRef<Chart | null>(null);
 
   useEffect(() => {
-
     if (chartRef.current) {
-
-      const ctx = chartRef.current.getContext('2d');
+      const ctx = chartRef.current.getContext("2d");
 
       if (ctx) {
-        new Chart(ctx, {
-          type: 'bar',
+        // Destruir o gráfico anterior, se existir
+        if (chartInstance.current) {
+          chartInstance.current.destroy();
+        }
+
+        // Criar o novo gráfico
+        chartInstance.current = new Chart(ctx, {
+          type: "bar",
           data: {
             labels: labels,
             datasets: [
               {
-                label: 'Vendas',
+                label: "Dataset",
                 data: data,
-                backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1,
+                backgroundColor: ["rgba(58, 164, 235, 0.5)", "#9e1197"],
+                borderColor: "rgba(54, 162, 235, 1)",
+                borderWidth: 0,
+                barPercentage: 0.7,
               },
             ],
           },
           options: {
+            indexAxis: "y",
             scales: {
-              y: {
+              x: {
                 beginAtZero: true,
+              },
+            },
+
+            plugins: {
+              legend: {
+                display: true,
+              },
+            },
+            layout: {
+              padding: {
+                top: 2,
               },
             },
           },
