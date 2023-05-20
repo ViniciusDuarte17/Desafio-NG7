@@ -6,5 +6,3 @@ export const Container = styled.div`
     height: 20em;
     background: #15152b;
 `
-
-
