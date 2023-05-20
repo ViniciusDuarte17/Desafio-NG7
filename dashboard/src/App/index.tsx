@@ -1,6 +1,6 @@
 import GlobalStyles from "../GlobalStyled";
 import { BarChart } from "../components/BarChart";
-import BatteryChart from "../components/BatteryChart";
+// import BatteryChart from "../components/BatteryChart";
 import { Card } from "../components/Card";
 import Chart from "../components/Chart";
 import { Header } from "../components/Header";
