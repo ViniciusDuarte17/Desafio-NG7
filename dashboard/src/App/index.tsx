@@ -37,15 +37,16 @@ function App() {
                 {/* gráfico efeito pizza 1 */}
                 <BarChart title="Attendance">
                   <Chart title="attendace" number={15} />
-                  <Chart title="attendace" number={20} />
-                  <Chart title="attendace" number={20} />
+                  <Chart title="attendace" number={80} />
+                  <Chart title="attendace" number={50} />
                 </BarChart>
               </div>
 
               <div>
                 {/* barra 2 */}
-                <BarChart title="Attendance">
-                  <BatteryChart data={[1, 2]} labels={['string', 'string']} />
+                <BarChart title="Barra horizontal">
+                  {/* <BatteryChart data={[1, 2]} labels={['string', 'string']} /> */}
+                  <p>teste</p>
                 </BarChart>
               </div>
             </S.SectionBarChart>

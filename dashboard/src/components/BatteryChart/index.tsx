@@ -5,6 +5,9 @@ interface BatteryChart {
   data: number[];
   labels: string[];
 }
+import { Tooltip, Chart as NewChart, Title, ArcElement } from "chart.js";
+
+NewChart.register(Title, Tooltip, ArcElement);
 
 const BatteryChart: React.FC<BatteryChart> = ({ data, labels }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
