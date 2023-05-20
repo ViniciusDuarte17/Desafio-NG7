@@ -33,9 +33,14 @@ export const SectionBarChart = styled.div`
 
 
 export const SectionChartToNumber = styled.section`
-  width: 94%;
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px ;
+  padding-top: 3%;
+  padding-left: 3%;
+  width: 92%;
   height: 8em;
-  border: 1px solid yellow;
+  margin-top: 2%;
   margin-left: 3%;
-  /* margin-top: 4%; */
+  margin-bottom: 2%;
+  background-color: #15152b;
 `

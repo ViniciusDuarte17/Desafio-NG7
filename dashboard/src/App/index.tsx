@@ -69,7 +69,10 @@ function App() {
           </S.SectionAnalysis>
 
           <S.SectionChartToNumber>
-            <h1>compenetes com porcentagem</h1>
+            <Card text="Sucesso" price="88%" />
+            <Card text="Sucesso" price="88%" />
+            <Card text="Sucesso" price="88%" />
+            <Card text="Sucesso" price="88%" />
           </S.SectionChartToNumber>
         </div>
       </S.ContainerApp>

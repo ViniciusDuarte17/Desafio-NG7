@@ -6,7 +6,7 @@ interface Props {
     // icon: string;
     text: string;
     price: string;
-    children: ReactNode;
+    children?: ReactNode;
 }
 
 export const Card = ({ text, price, children}: Props) => {
