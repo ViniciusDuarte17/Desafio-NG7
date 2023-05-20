@@ -1,5 +1,6 @@
 import GlobalStyles from "../GlobalStyled";
 import { BarChart } from "../components/BarChart";
+import BatteryChart from "../components/BatteryChart";
 import { Card } from "../components/Card";
 import Chart from "../components/Chart";
 import { Header } from "../components/Header";
@@ -8,8 +9,6 @@ import { SideBar } from "../components/SideBar";
 import * as S from "./styled";
 
 function App() {
-
-  
   return (
     <>
       <GlobalStyles />
@@ -45,7 +44,9 @@ function App() {
 
               <div>
                 {/* barra 2 */}
-                {/* <BarChart /> */}
+                <BarChart title="Attendance">
+                  <BatteryChart data={[1, 2]} labels={['string', 'string']} />
+                </BarChart>
               </div>
             </S.SectionBarChart>
           </S.SectionAnalysis>
