@@ -43,11 +43,7 @@ function App() {
               </div>
 
               <div>
-                {/* barra 2 */}
-                {/* <BarChart title="Barra horizontal"> */}
-                  <BatteryChart data={[50, 20]} labels={['Homens', 'Mulheres']} />
-                 
-                {/* </BarChart> */}
+                <BatteryChart data={[50, 20]} labels={["Homens", "Mulheres"]} />
               </div>
             </S.SectionBarChart>
           </S.SectionAnalysis>
