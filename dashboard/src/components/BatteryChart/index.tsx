@@ -29,7 +29,7 @@ const BatteryChart: React.FC<BatteryChartProps> = ({ data, labels }) => {
               {
                 label: "Dataset",
                 data: data,
-                backgroundColor: ["rgba(58, 164, 235, 0.5)", "#9e1197"],
+                backgroundColor: ["rgba(58, 164, 235, 0.5)", "#700b6b"],
                 borderColor: "rgba(54, 162, 235, 1)",
                 borderWidth: 0,
                 barPercentage: 0.7,
