@@ -1,16 +1,19 @@
 import * as S from "./styled";
 
+import {ReactNode} from "react";
+
 interface Props {
-    icon: string;
+    // icon: string;
     text: string;
-    price: string
+    price: string;
+    children: ReactNode;
 }
 
-export const Card = ({icon, text, price}: Props) => {
+export const Card = ({ text, price, children}: Props) => {
   return (
     <S.Container>
        <section>
-          {icon}
+          {children}
        </section>
 
        <S.Paragraph>

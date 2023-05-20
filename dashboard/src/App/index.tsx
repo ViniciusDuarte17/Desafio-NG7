@@ -4,9 +4,15 @@ import BatteryChart from "../components/BatteryChart";
 import { Card } from "../components/Card";
 import Chart from "../components/Chart";
 import { Header } from "../components/Header";
-import  LineChart  from "../components/LineChart";
+import LineChart from "../components/LineChart";
 import { SideBar } from "../components/SideBar";
 import * as S from "./styled";
+
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import SchoolIcon from "@mui/icons-material/School";
+import PermIdentitySharpIcon from "@mui/icons-material/PermIdentitySharp";
+import SecurityIcon from "@mui/icons-material/Security";
+import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 
 function App() {
   return (
@@ -21,16 +27,30 @@ function App() {
           <Header />
 
           <S.SectionCard>
-            <Card icon="icon" text="texto vai por aqui" price="2,119" />
-            <Card icon="icon" text="texto vai por aqui" price="2,119" />
-            <Card icon="icon" text="texto vai por aqui" price="2,119" />
-            <Card icon="icon" text="texto vai por aqui" price="2,119" />
-            <Card icon="icon" text="texto vai por aqui" price="2,119" />
+            <Card text="texto vai por aqui" price="2,119">
+              <PermIdentitySharpIcon />
+            </Card>
+            <Card text="texto vai por aqui" price="2,119">
+              <FormatListBulletedIcon />
+            </Card>
+            <Card text="texto vai por aqui" price="2,119">
+              <SchoolIcon />
+            </Card>
+            <Card text="texto vai por aqui" price="2,119">
+              <SecurityIcon />
+            </Card>
+            <Card text="texto vai por aqui" price="2,119">
+              <ImportContactsIcon />
+            </Card>
           </S.SectionCard>
 
           <S.SectionAnalysis>
             <div>
-              <LineChart data={[65, 59, 80]} data2={[69, 75, 90]} labels={["A", "B", "C"]}/>
+              <LineChart
+                data={[65, 59, 80]}
+                data2={[69, 75, 90]}
+                labels={["A", "B", "C"]}
+              />
             </div>
             <S.SectionBarChart>
               <div>
