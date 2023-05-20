@@ -43,17 +43,6 @@ const BatteryChart: React.FC<BatteryChartProps> = ({ data, labels }) => {
                 beginAtZero: true,
               },
             },
-
-            plugins: {
-              legend: {
-                display: true,
-              },
-            },
-            layout: {
-              padding: {
-                top: 2,
-              },
-            },
           },
         });
       }

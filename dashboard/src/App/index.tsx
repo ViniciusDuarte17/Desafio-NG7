@@ -4,7 +4,7 @@ import BatteryChart from "../components/BatteryChart";
 import { Card } from "../components/Card";
 import Chart from "../components/Chart";
 import { Header } from "../components/Header";
-import { LineChart } from "../components/LineChart";
+import  LineChart  from "../components/LineChart";
 import { SideBar } from "../components/SideBar";
 import * as S from "./styled";
 
@@ -30,7 +30,7 @@ function App() {
 
           <S.SectionAnalysis>
             <div>
-              <LineChart />
+              <LineChart data={[65, 59, 80]} data2={[69, 75, 90]} labels={["A", "B", "C"]}/>
             </div>
             <S.SectionBarChart>
               <div>
